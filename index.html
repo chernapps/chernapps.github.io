@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="joe-styles.css" type="text/css">
+        <title>Joe Berger Soundboard</title>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.col-md-3').hover(function() {
+                    $(this).find("button, .panel").css("box-shadow", "0px 0px 5px 5px lightblue"); 
+                }, function() {
+                    $(this).find("button, .panel").css("box-shadow", "");   
+                });
+            });
+            var playSound = function(name) {
+                document.getElementById(name).play();
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="row">
+                        <audio id="imjoeberger" src="joe-sounds/imjoeberger.mp3"></audio>
+                        <button type="button" onclick="playSound('imjoeberger')"></button>
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                I'm Joe Berger
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="row">
+                        <audio id="wait" src="joe-sounds/wait.mp3"></audio>
+                        <button type="button" onclick="playSound('wait')"></button>
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                Wait wait wait
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="row">
+                        <audio id="youare" src="joe-sounds/youare.mp3"></audio>
+                        <button type="button" onclick="playSound('youare')"></button>
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                You are?!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="row">
+                        <audio id="yeah" src="joe-sounds/yeah.mp3"></audio>
+                        <button type="button" onclick="playSound('yeah')"></button>
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                Yeah!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="row">
+                        <audio id="interesting" src="joe-sounds/interesting.mp3"></audio>
+                        <button type="button" onclick="playSound('interesting')"></button>
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                Interesting
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="row">
+                        <audio id="imjamie" src="joe-sounds/imjamie.mp3"></audio>
+                        <button type="button" onclick="playSound('imjamie')"></button>
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                I'm Jamie
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="row">
+                        <audio id="idontthinkso" src="joe-sounds/idontthinkso.mp3"></audio>
+                        <button type="button" onclick="playSound('idontthinkso')"></button>
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                I don't think so
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="row">
+                        <audio id="burp" src="joe-sounds/burp.mp3"></audio>
+                        <button type="button" onclick="playSound('burp')"></button>
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                *Excuse me*
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="row">
+                        <audio id="tryagain" src="joe-sounds/tryagain.mp3"></audio>
+                        <button type="button" onclick="playSound('tryagain')"></button>
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                Try again
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="row">
+                        <audio id="nah" src="joe-sounds/nah.mp3"></audio>
+                        <button type="button" onclick="playSound('nah')"></button>
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                Nah nah nah
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="row">
+                        <audio id="smell" src="joe-sounds/smell.mp3"></audio>
+                        <button type="button" onclick="playSound('smell')"></button>
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                What is that smell?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="row">
+                        <audio id="doodlebob" src="joe-sounds/doodlebob.mp3"></audio>
+                        <button type="button" onclick="playSound('doodlebob')"></button>
+                    </div>
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                Doodlebob
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
